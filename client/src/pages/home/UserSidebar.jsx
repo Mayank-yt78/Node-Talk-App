@@ -43,7 +43,7 @@ const UserSidebar = () => {
   return (
     <div className="max-w-[20em] w-full h-screen flex flex-col border-r border-r-white/10">
       <h1 className="bg-black mx-3 rounded-lg mt-3 px-2 py-1 text-[#7480FF] text-xl font-semibold">
-        GUP SHUP
+        NODE-TALK
       </h1>
 
       <div className="p-3">
