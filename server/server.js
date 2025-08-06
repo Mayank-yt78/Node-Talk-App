@@ -31,11 +31,12 @@ app.use('/api/v1/message', messageRoutes);
 import { errorMiddleware } from './middlewares/error.middleware.js';
 app.use(errorMiddleware);
 
-app.get('/',(req, res) => {
-    activeStatus = true;
-    error: false;
-    res.send('Server is running');
-})
+app.get('/', (req, res) => {
+    const activeStatus = true;
+    const error = false;
+    res.json({ activeStatus, error });
+});
+
 
 server.listen(PORT, () => {
     console.log(`Server is running on ${PORT}`);
